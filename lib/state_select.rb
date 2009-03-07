@@ -19,6 +19,7 @@ module Helpers #:nodoc:
   module FormOptionsHelper
     # Return select and option tags for the given object and method, using state_options_for_select to generate the list of option tags.
     def state_select(object, method, options = {}, html_options = {})
+      options.symbolize_keys!
       options[:country] ||= 'US'
       ActionView::Helpers::InstanceTag.new(object, method, self, options.delete(:object)).to_state_select_tag(options.delete(:country), options, html_options)
     end
@@ -41,7 +42,8 @@ module Helpers #:nodoc:
 
   class InstanceTag
     def to_state_select_tag(country, options, html_options)
-      html_options = html_options.stringify_keys
+      options.symbolize_keys!
+      html_options.stringify_keys!
       add_default_name_and_id(html_options)
       value = value(object)
       selected_value = options.has_key?(:selected) ? options[:selected] : value
