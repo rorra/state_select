@@ -14,6 +14,7 @@ module Helpers #:nodoc:
     SCOTLAND  = ["Aberdeen City","Aberdeenshire","Angus","Argyll & Bute","Clackmannanshire","Dumfries & Galloway","Dundee City","East Ayrshire","East Dunbartonshire","East Lothian","East Renfrewshire","Edinburgh","Falkirk","Fife","Glasgow","Highland","Inverclyde","Midlothian","Moray","North Ayrshire","North Lanarkshire","Orkney","Perth & Kinross","Renfrewshire","Scottish Borders","Shetland","South Ayrshire","South Lanarkshire","Stirling","West Dunbartonshire","West Lothian","Western Isles"]
     WALES     = ["Aberystwyth","Builth Wells","Brecon Beacons","Cardiff","Caernarfon","Fishguard","Holyhead","Llangollen","Pembrokshire","Snowdonia","Swansea"]
     IRELAND   = ["Dublin","Midlands","Northern Ireland","Outer Dublin","Southeast Ireland","Southwest Ireland","West Ireland"]
+    ARGENTINA = ["Capital Federal", "Buenos Aires", "Catamarca", "Córdoba", "Corrientes", "Chaco", "Chubut", "Entre Ríos", "Formosa", "Jujuy", "La Pampa", "La Rioja", "Mendoza", "Misiones", "Neuquén", "Río Negro", "Salta", "San Juan", "San Luis", "Santa Cruz", "Santa Fe", "Santiago del Estero", "Tierra del Fuego", "Tucumán"]
   end
 
   module FormOptionsHelper
